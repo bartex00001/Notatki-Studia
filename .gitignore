@@ -1,0 +1,5 @@
+# Ignnore generated website files
+public
+
+# Ignore quartz cache
+.quartz-cache
