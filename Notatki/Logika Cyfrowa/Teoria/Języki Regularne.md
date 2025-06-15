@@ -55,7 +55,7 @@ Przykłady:
 
 #### Język Pusty
 
-$∅$ – język nie zawierający żadnego słowa.
+$\emptyset$ – język nie zawierający żadnego słowa.
 To jest coś innego niż $\set{\epsilon}$ – język zawierający jedno puste słowo
 
 #### Potęgowanie Języków
@@ -76,9 +76,9 @@ Język zawierający tylko jedno słowo – przykładowo $\set{10}$.
 Język $L_{1}L_{2}$ – zbiór konkatenacji wszystkich słów z $L_{1}$ ze wszystkimi z $L_{2}$:
 $$L_{1}L_{2} = \set{w_{1}w_{2} | w_{1} \in L_{1}\land w_{2}\in L_{2}}$$
 Na przykład:
-- $∅L = L∅ = ∅$
+- $\emptyset L = L\emptyset = \emptyset$
 - $\set{\epsilon}L = L\set{\epsilon} = L$
-- $\set{ko,pło}\set{ń,za} = \set{koń,koza,płoń,płoza}$
+- $\set{ko,plo}\set{n,za} = \set{kon,koza,plon,ploza}$
 
 #### Suma Języków
 
@@ -99,7 +99,7 @@ $$L^{*} = L^{1}\cup L^{2}\cup \dots = LL^{*}$$
 
 Wyrażenia opisujące języki regularne:
 
-- $L(∅) = ∅$
+- $L(\emptyset) = \emptyset$
 - $L(\epsilon) = \set{\epsilon}$
 - $L(a) = \set{a}$
 - $L(e_{1} + e_{2}) = L(e_{1}) \cup L(e_{2})$

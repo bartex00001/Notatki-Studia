@@ -105,7 +105,7 @@ Słownie $\log^{*} n$ wyznacza najmniejsze takie $k$, że funkcja Ackermana $A(k
 
 ---
 
-Teraz podzielmy wszystkie wierzchołki na kubełki takie, że $B_{i} = \{v \mid rząd(v) = \log^{*} i\}$.
+Teraz podzielmy wszystkie wierzchołki na kubełki takie, że $B_{i} = \{v \mid \text{rząd}(v) = \log^{*} i\}$.
 
 1. Wystarczy nam $\log^{*}n$ kubełków, bo nie może istnieć wierzchołek o randze większej niż $n$.
 2. W kubełku $B_{i}$ jest co najwyżej $\frac{2n}{2^{A(i)}}$ elementów. Z *lematu 4* możemy rozpisać sumę na maksymalną liczbę elementów każdej z rang: $\frac{n}{2^{A(i)}} + \frac{n}{2^{A(i) + 1}} + \dots + \frac{n}{2^{2^{A(i)} - 1}} \le \frac{2n}{2^{A(i)}}$.
@@ -121,7 +121,7 @@ Do korzenia przejdziemy raz dla każdego zapytania, stąd $T_{1} = O(n)$.
 Mamy ograniczenie na liczbę kubełków, stąd $T_{2} = O(n\log^{*}n)$ – każdym elementem przejdziemy co najwyżej każdy kubełek (tak, to jest luźne oszacowanie).
 
 By oszacować $T_{3}$ przeanalizujmy przechodzenie z pewnego wierzchołka $u$ do $v$ – najwyższego wierzchołka w tym kubełku – $B_{i}$ (zakładamy, że $v$ nie jest korzeniem całego drzewa, bo wtedy przejście liczymy w $T_{1}$).  
-Z wierzchołkiem $u$ będziemy iść w górę drzewa, więc w kolejnych operacjach przenosić będziemy się do ściśle mniejszej wartości $rząd$ (*lemat 2*).
+Z wierzchołkiem $u$ będziemy iść w górę drzewa, więc w kolejnych operacjach przenosić będziemy się do ściśle mniejszej wartości $\text{rząd}$ (*lemat 2*).
 
 Różnych wartości $rząd$ w jednym kubełku będzie nie więcej niż $2^{A(i)} - A(i) \le 2^{A(i)}$, stąd też nie wykonamy więcej przejść w jednym kubełku.  
 Pozwoli to nam rozpisać odgórne oszacowanie $T_{3}$ jako suma wszystkich możliwych przejść *"do góry kubełka*:

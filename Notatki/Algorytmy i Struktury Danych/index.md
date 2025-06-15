@@ -1,6 +1,6 @@
 # (WIP) Lista zagadnień do powtórzenia przed egzaminem:
 
-- [ ] [[Złożoność Algorytmów i Problemów]]
+- [x] [[Złożoność Algorytmów i Problemów]]
 - [ ] Dolne Granice
 	- [ ] [[Model Obliczeń]]
 	- [ ] [[Liniowe Drzewa Decyzyjne]]
