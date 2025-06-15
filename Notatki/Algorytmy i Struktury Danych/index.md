@@ -1,0 +1,60 @@
+(WIP) Lista zagadnień do powtórzenia przed egzaminem:
+
+- [ ] [[Złożoność Algorytmów i Problemów]]
+- [ ] Dolne Granice
+	- [ ] [[Model Obliczeń]]
+	- [ ] [[Liniowe Drzewa Decyzyjne]]
+	- [ ] [[Gra z Adwersarzem]]
+- [ ] [[Wstęp – Algorytmy Zachłanne|Algorytmy Zachłanne]]
+	- [ ] Minimalne Drzewo Spinające
+		- [ ] [[Algorytm Kruskala]]
+		- [ ] [[Algorytm Borůvki]]
+	- [ ] [[Szeregowanie Zadań]]
+	- [ ] [[Set Cover]]
+- [ ] [[Dziel i Zwyciężaj]]
+	- [ ] [[Merge Sort]]
+	- [ ] [[Mnożenie (Dużych) Liczb]]
+	- [ ] [[MinMax]]
+	- [ ] [[Sieci Przełączników]]
+	- [ ] [[Closest Points]]
+- [ ] [[Programowanie Dynamiczne]]
+	- [ ] [[Liczenie Dwumianu Newtona]]
+	- [ ] [[Najtańsza Trasa w Tablicy]]
+	- [ ] [[Najdłuższy Wspólny Podciąg]]
+	- [ ] [[Wyznaczanie Kolejności Mnożenia Macierzy]]
+		- [ ] [[Optymalizacja Knutha]] – dodatkowe
+	- [ ] [[Problem Plecakowy]]
+	- [ ] [[Najkrótsze Ścieżki Między Parami Wierzhołków]]
+	- [ ] [[Wyprowadzalność Wyrazu z Gramatyki]]
+	- [ ] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe
+- [ ] Struktury Danych
+	- [ ] [[Kopiec (binarny)]]
+		- [ ] [[Kopiec MinMax]]
+	- [ ] [[Drzewa AVL]]
+	- [ ] [[B-Drzewa]]
+	- [ ] [[Drzewa Czerwono-Czarne]]
+	- [ ] [[Kopce Dwumianowe]]
+	- [ ] [[Kopce Fibonacciego]]
+	- [ ] [[Drzewa Splay]]
+	- [x] [[Union Find]]
+- [ ] Sortowanie
+	- [ ] [[Quicksort]]
+	- [ ] [[Alternatywne Sortowanie]]
+	- [ ] [[Sortowanie Leksykograficzne]]
+		- [ ] [[Izomorfizm Drzew]]
+- [ ] Selekcja
+	- [ ] [[Selekcja|Szczególne Przypadki]]
+	- [ ] [[Algorytm Magicznych Piątek]]
+	- [ ] [[Algorytm Hoare'a]]
+	- [ ] [[Lazy Select]]
+- [x] [[Haszowanie]]
+	- [x] [[Haszowanie Uniwersalne]]
+	- [x] [[Schematy Urnowe]]
+	- [x] [[Słownik Statyczny]]
+- [x] [[Wyszukiwanie Wzorca]]
+	- [x] [[Karp Rabin]]
+	- [x] [[Wyszukiwanie Automatem Skończonym]]
+	- [x] [[KMP]]
+- [ ] [[Fast Fourier Transform]]
+
+> Lista tematów w ograniczonym porządku temporalnym

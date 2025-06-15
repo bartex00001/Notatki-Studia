@@ -1,2 +1,3 @@
-# Notatki Studiowe
+# BS Notatki Studiowe
 
+> BS pozostawiam do intepretacji

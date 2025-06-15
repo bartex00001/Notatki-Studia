@@ -3,3 +3,6 @@ public
 
 # Ignore quartz cache
 .quartz-cache
+
+# Utility script for my local sync
+copy.py
