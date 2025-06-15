@@ -28,7 +28,7 @@ stateDiagram-v2
 > Jeżeli brakuje strzałki, to prowadzi ona do słowa pustego.
 > Dotarcie do stanu `7` oznacza, że w tym miejscu tekstu kończy się wzorzec.
 
-Przejścia pomiędzy stanami często oznacza się funkcją $\delta : Q \times \Sigma \to Q$ (stan, następny element $\to$ nowy stan).
+Przejścia pomiędzy stanami często oznacza się funkcją $\delta : Q \times \Sigma \to Q$ (stan, następny element $\to$ nowy stan).  
 Dla diagramu powyżej kilka wartości, które przyjmie funkcja stanu to np.:
 
 - $\delta(4, a) = 5$

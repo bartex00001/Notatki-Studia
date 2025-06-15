@@ -14,7 +14,7 @@ $$
 \forall_{j\in\{0,\dots,m-1\}}\sum\limits_{k\ :\ h(k) = j} P(k) = \frac{1}{m} &&(DFH)
 \end{align*}
 $$
-Czyli chcielibyśmy, by suma prawdopodobieństw [[Przestrzeń Probabilistyczna#Prawdopodobieństwo|prawdopodobieństwo]] mapowań elementów z $U$ na wybrane $j$ wynosiła $\frac{1}{m}$ dla każdego $j$.
+Czyli chcielibyśmy, by suma prawdopodobieństw [[Przestrzeń Probabilistyczna#Prawdopodobieństwo|prawdopodobieństwo]] mapowań elementów z $U$ na wybrane $j$ wynosiła $\frac{1}{m}$ dla każdego $j$.  
 W praktyce warunku tego nie możemy sprawdzać, bo prawie zawsze $P$ nie jest znane oraz chcielibyśmy, by funkcja haszująca działała szybko.
 
 ### Przykłady Funkcji Haszujących
@@ -22,7 +22,7 @@ W praktyce warunku tego nie możemy sprawdzać, bo prawie zawsze $P$ nie jest zn
 $$
 h(k) = k \text{ mod } m
 $$
-Tutaj należy być odrobinę ostrożnym przy wyborze $m$. Jeżeli weźmiemy $m = 2^{p}$, to $h$ wybiera tak naprawdę $p$ ostatnich bitów liczby, których rozkład nie musi być jednorodny. Podobnie dla innych potęg.
+Tutaj należy być odrobinę ostrożnym przy wyborze $m$. Jeżeli weźmiemy $m = 2^{p}$, to $h$ wybiera tak naprawdę $p$ ostatnich bitów liczby, których rozkład nie musi być jednorodny. Podobnie dla innych potęg.  
 Z tego powodu zaleca się wybieranie $m$ będącego liczbą pierwszą daleką od potęg dwójki.
 
 $$
@@ -47,7 +47,7 @@ Jeżeli wybierzemy funkcję haszującą spełniającą $(DFH)$, to w łatwy spos
 
 Wartość $\frac{n}{m} = \alpha$ nazywamy *współczynnikiem wypełnienia tablicy*.
 
-**Wniosek:**
+**Wniosek:**  
 Jeżeli $n = O(m)$, to średni koszt operacji `SEARCH` jest stały.
 
 ### Adresowanie Otwarte
@@ -63,7 +63,7 @@ $$
 \end{align*}
 $$
 
-Wtedy faktycznie do przechowywania wystarczy $m$-elementowa tablica wartości $T$.
+Wtedy faktycznie do przechowywania wystarczy $m$-elementowa tablica wartości $T$.  
 Wstawianie elementu zaczniemy od próby $h(k, 0)$, jeżeli to się nie powiedzie to będziemy przechodzić po kolejnych $h(k, i)$ aż do wstawienia elementu, albo zweryfikowania, że nie można wstawić kolejnego elementu, bo tablica haszująca jest pełna.
 
 #### Metody
@@ -104,11 +104,11 @@ $$
 \end{align*}
 $$
 
-**Twierdzenie 1:**
-Przy założeniu $(DPER)$ – doskonałych permutacji i $\alpha = \frac{n}{m}  < 1$ oczekiwana liczba prób wyszukiwania miejsca dla nowego $k$ jest nie większy niż $\frac{1}{1 - \alpha}$.
-**d-d:**
-Z założenia $(DPER)$ mamy, że $h(k, i)$ z równym prawdopodobieństwem wskazuje każdą pozycję w tablicy oraz wskazywana pozycja jest inna niż poprzednie (bo generujemy permutację).
-Teraz rozpiszmy zmienną losową $X$ przyjmującą wartość najmniejszego $i$ takiego, że $h(k, i)$  nie zostało użyte.
+**Twierdzenie 1:**  
+Przy założeniu $(DPER)$ – doskonałych permutacji i $\alpha = \frac{n}{m}  < 1$ oczekiwana liczba prób wyszukiwania miejsca dla nowego $k$ jest nie większy niż $\frac{1}{1 - \alpha}$.  
+**d-d:**  
+Z założenia $(DPER)$ mamy, że $h(k, i)$ z równym prawdopodobieństwem wskazuje każdą pozycję w tablicy oraz wskazywana pozycja jest inna niż poprzednie (bo generujemy permutację).  
+Teraz rozpiszmy zmienną losową $X$ przyjmującą wartość najmniejszego $i$ takiego, że $h(k, i)$  nie zostało użyte.  
 Inaczej: $P(X \ge z)$ odpowiada prawdopodobieństwu, że potrzeba wykonań co najmniej $z$ instrukcji, stąd intuicyjnie:
 $$
 \begin{align*}
@@ -125,9 +125,9 @@ E(X) \overset{(1)}{=} \sum\limits_{i=1}^{\infty}P(X \ge i) \le \sum\limits_{i=1}
 $$
 $(1)$ Dowód przejścia [[Wartość Oczekiwana#Alternatywny Wzór Dla Dziedziny Naturalnej|tutaj]].
 
-**Twierdzenie 2:**
-Przy założeniu $(DPER)$ oczekiwany czas wyszukiwania elementu zawartego w tablicy zapełnionej ze współczynnikiem $\alpha = \frac{n}{m} < 1$ jest nie większy niż $\frac{1}{\alpha}\ln \frac{1}{1-\alpha}$.
-**d-d:**
+**Twierdzenie 2:**  
+Przy założeniu $(DPER)$ oczekiwany czas wyszukiwania elementu zawartego w tablicy zapełnionej ze współczynnikiem $\alpha = \frac{n}{m} < 1$ jest nie większy niż $\frac{1}{\alpha}\ln \frac{1}{1-\alpha}$.  
+**d-d:**  
 Jeżeli teraz w tablicy jest $n$ elementów, to z równym prawdopodobieństwem będziemy próbowali wyszukać element wstawiony kiedy w tablicy było $i\in\{0, \dots, n-1\}$ elementów. Weźmiemy więc średnią oszacowań z twierdzenia pierwszego:
 $$
 \begin{align*}

@@ -1,4 +1,4 @@
-(WIP) Lista zagadnień do powtórzenia przed egzaminem:
+# (WIP) Lista zagadnień do powtórzenia przed egzaminem:
 
 - [ ] [[Złożoność Algorytmów i Problemów]]
 - [ ] Dolne Granice

@@ -11,7 +11,7 @@ Wszystko można wziąć brać po modulo, by nie dochodziło do przepełnienia.
 
 ## Złożoność Czasowa
 
-Pesymistycznie taka jak algorytmu naiwnego – by wystąpił taki przypadek kolizje haszy muszą wystąpić na (prawie) każdej pozycji.
+Pesymistycznie taka jak algorytmu naiwnego – by wystąpił taki przypadek kolizje haszy muszą wystąpić na (prawie) każdej pozycji.  
 Tak może być jeżeli faktycznie wzorzec występuje na każdej pozycji tekstu. Mamy więc ograniczenie $O(mn)$.
 
 Częściej będziemy spodziewać się jednak czasu działania $O(n + m)$.

@@ -2,7 +2,7 @@
 
 [[Wyszukiwanie Automatem Skończonym]] wymaga, by dla każdego prefiksu wzorca istniała funkcja przejścia *dla każdej* następnie napotkanej litery. Wprowadza to duże koszty generowania automatu, bo takich możliwych przejść jest po prostu dużo (dokładnie to $m|\Sigma|$ wiele).
 
-Głównym pomysłem stojącym za KMP jest zrelaksowanie tych wymogów, by dla każdego stanu przejście przy braku trafienia wyznaczało następne *potencjalne* miejsce do zaczęcia dalszych poszukiwań (a nie to, gdzie na pewno można).
+Głównym pomysłem stojącym za KMP jest zrelaksowanie tych wymogów, by dla każdego stanu przejście przy braku trafienia wyznaczało następne *potencjalne* miejsce do zaczęcia dalszych poszukiwań (a nie to, gdzie na pewno można).  
 Będzie to oznaczało więcej obliczeń podczas wyszukiwania wzorca, ale na razie nas to nie interesuje.
 
 ## Funkcja $\pi$
@@ -65,8 +65,8 @@ def kmp_match(T[1..n], P[1..m]):
 
 ### Złożoność Czasowa
 
-W `kmp_match` główna pętla `for` wykona się $\Theta(n)$ razy.
-Dla każdego z tych przejść środkowa pętla `while` wykona się co najwyżej $q\le m$ razy. Zauważamy jednak, że zmienną `q` zwiększamy co najwyżej o jeden przy każdym przejściu `for`, więc koszt wewnętrznej pętli `while` amortyzuje się do $O(n)$.
+W `kmp_match` główna pętla `for` wykona się $\Theta(n)$ razy.  
+Dla każdego z tych przejść środkowa pętla `while` wykona się co najwyżej $q\le m$ razy.   Zauważamy jednak, że zmienną `q` zwiększamy co najwyżej o jeden przy każdym przejściu `for`, więc koszt wewnętrznej pętli `while` amortyzuje się do $O(n)$.
 
 Dla funkcji `find_pi` można przeprowadzić identyczne rozumowanie, tylko że długość ciągu wynosi $m$.
 
