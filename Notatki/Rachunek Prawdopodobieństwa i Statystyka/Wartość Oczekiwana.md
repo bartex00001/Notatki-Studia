@@ -32,4 +32,4 @@ $$
 E(X) = \sum\limits_{1}^{n}P(X \ge i)
 $$
 **d-d:**  
-Zauważmy, że $P(X = k)$ weźmiemy dla każdego $k \ge i \in \mathbb{N}$, których jest łącznie $k$. Odpowiada to więc uwzględnieniu $k \cdot P(X = k)$, więc wszystkich składników jest tyle co potrzeba.
+Zauważmy, że $P(X = k)$ weźmiemy dla każdego $k \ge i \in \mathbb{N}$, których jest łącznie $k$.   Odpowiada to więc uwzględnieniu $k \cdot P(X = k)$, więc wszystkich składników jest tyle co potrzeba.

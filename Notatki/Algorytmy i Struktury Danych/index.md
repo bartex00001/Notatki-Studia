@@ -28,8 +28,8 @@
 	- [ ] [[Wyprowadzalność Wyrazu z Gramatyki]]
 	- [ ] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe
 - [ ] Struktury Danych
-	- [ ] [[Kopiec (binarny)]]
-		- [ ] [[Kopiec MinMax]]
+	- [x] [[Kopiec (binarny)]]
+		- [x] [[Kopiec MinMax]]
 	- [ ] [[Drzewa AVL]]
 	- [ ] [[B-Drzewa]]
 	- [ ] [[Drzewa Czerwono-Czarne]]
