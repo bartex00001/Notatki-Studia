@@ -1,9 +1,8 @@
 **Dane:**
-Dane są elementy $S$ będące podzbiorem $U$.
-Tablica $T[0\dots|S|-1]$.
+Dane są elementy $S$ będące podzbiorem $U$ oraz tablica $T[0\dots|S|-1]$.
 
 **Zadanie:**
-Utworzyć funkcję $h: U  \to \{0,\dots m-1\}$ wyznaczającą pozycję elementu w tablicy $T$wyznaczającą pozycję elementu w tablicy $T$.
+Utworzyć funkcję $h: U  \to \{0,\dots m-1\}$ wyznaczającą pozycję odpowiadające elementom $S$ w tablicy $T$.
 
 ## Funkcje Haszujące
 
@@ -11,9 +10,9 @@ Utworzyć funkcję $h: U  \to \{0,\dots m-1\}$ wyznaczającą pozycję elementu 
 
 Dobra funkcja haszująca powinna spełniać następujący warunek:
 $$
-\begin{align}
+\begin{align*}
 \forall_{j\in\{0,\dots,m-1\}}\sum\limits_{k\ :\ h(k) = j} P(k) = \frac{1}{m} &&(DFH)
-\end{align}
+\end{align*}
 $$
 Czyli chcielibyśmy, by suma prawdopodobieństw [[Przestrzeń Probabilistyczna#Prawdopodobieństwo|prawdopodobieństwo]] mapowań elementów z $U$ na wybrane $j$ wynosiła $\frac{1}{m}$ dla każdego $j$.
 W praktyce warunku tego nie możemy sprawdzać, bo prawie zawsze $P$ nie jest znane oraz chcielibyśmy, by funkcja haszująca działała szybko.
@@ -59,9 +58,9 @@ h: U \times \{0,1,\dots,m-1\} \to \{0,1,\dots,m-1\}
 $$
 Dodatkowo chcemy, by
 $$
-\begin{align}
+\begin{align*}
 \forall_{k\in U}\langle h(k, 0), \dots, h(k, m-1)\rangle \text{ było permutacją zbioru } \{0,1,\dots,m-1\} && (PER)
-\end{align}
+\end{align*}
 $$
 
 Wtedy faktycznie do przechowywania wystarczy $m$-elementowa tablica wartości $T$.
@@ -99,10 +98,10 @@ By spełnić $(PER)$ potrzebujemy, by $h''(k)$ było względnie pierwsze z $m$.
 
 Dla uproszczenia przyjmiemy wyidealizowane założenie, że:
 $$
-\begin{align}
+\begin{align*}
 (DPER) \\
 \langle h(k,0), \dots, h(k, m-1)\rangle \text{ jest równie prawdopodobnie dowolną permutacją } \{0, \dots, m- 1\}
-\end{align}
+\end{align*}
 $$
 
 **Twierdzenie 1:**
@@ -112,17 +111,17 @@ Z założenia $(DPER)$ mamy, że $h(k, i)$ z równym prawdopodobieństwem wskazu
 Teraz rozpiszmy zmienną losową $X$ przyjmującą wartość najmniejszego $i$ takiego, że $h(k, i)$  nie zostało użyte.
 Inaczej: $P(X \ge z)$ odpowiada prawdopodobieństwu, że potrzeba wykonań co najmniej $z$ instrukcji, stąd intuicyjnie:
 $$
-\begin{align}
+\begin{align*}
 P(X \ge z) &= \text{"nie udało się w każdej poprzedniej"} \\
 &= \frac{n}{m}\cdot \frac{m-1}{m-1} \cdot \dots \cdot \frac{n-z+2}{m-z +2} \\
 &\le \left( \frac{n}{m} \right)^{i-1} = \alpha^{i-1}
-\end{align}
+\end{align*}
 $$
 Możemy więc wyznaczyć jawny wzór na wartość oczekiwaną pozycji, na której pierwszy raz wyznaczymy nowe miejsce w tablicy:
 $$
-\begin{align}
+\begin{align*}
 E(X) \overset{(1)}{=} \sum\limits_{i=1}^{\infty}P(X \ge i) \le \sum\limits_{i=1}^{\infty}\alpha^{i-1} = \frac{1}{1 - \alpha}
-\end{align}
+\end{align*}
 $$
 $(1)$ Dowód przejścia [[Wartość Oczekiwana#Alternatywny Wzór Dla Dziedziny Naturalnej|tutaj]].
 
@@ -131,7 +130,7 @@ Przy założeniu $(DPER)$ oczekiwany czas wyszukiwania elementu zawartego w tabl
 **d-d:**
 Jeżeli teraz w tablicy jest $n$ elementów, to z równym prawdopodobieństwem będziemy próbowali wyszukać element wstawiony kiedy w tablicy było $i\in\{0, \dots, n-1\}$ elementów. Weźmiemy więc średnią oszacowań z twierdzenia pierwszego:
 $$
-\begin{align}
+\begin{align*}
 \frac{1}{n}\sum\limits_{i=0}^{n-1} \frac{1}{1-\frac{i}{m}} &= \frac{1}{n}\sum\limits_{i=0}^{n-1} \frac{m}{m-i} \\
 &= \frac{m}{n} \sum\limits_{i=0}^{n-1} \frac{1}{m-i} \\
 &= \frac{1}{\alpha} \sum\limits_{j = m - n + 1}^{m} \frac{1}{j} \\
@@ -139,6 +138,6 @@ $$
 &= \frac{1}{\alpha} \left . \ln x \right|_{m - n}^{m} \\
 &= \frac{1}{\alpha} \ln \frac{m}{m-n} \\
 &= \frac{1}{\alpha}\ln \frac{1}{1-\alpha}
-\end{align}
+\end{align*}
 $$
 Przejście do całki jest standardowym oszacowaniem przy interpretacji funkcji jako 'słupki'.

@@ -63,10 +63,10 @@ Czyli po ludzku: wartości $k,l$ każda funkcja $h_{a,b}'$ odwzorowuje na różn
 Dalej pokażemy, że każda para $a,b$ odpowiada innemu mapowaniu różnych $k,l$ na różne $r,s$.
 Zauważmy, że możliwych par $a,b$ (czyli również funkcji $h_{a,b}$) jest tyle samo co możliwych par $r,s$. Można pokazać, że istnieje bijekcja pozwalająca wyznaczyć $a,b$ na podstawie $k,l,r,s$:
 $$
-\begin{align}
+\begin{align*}
 a &= ((r - s)((k - l)^{-1} \text{ mod }p)) \text{ mod }p \\
 b &= (r - ak) \text{ mod }p
-\end{align}
+\end{align*}
 $$
 Oznacza to, że dokładnie jedna funkcja $h_{a,b}'$ przekształca $k,l$ na $r,s$.
 

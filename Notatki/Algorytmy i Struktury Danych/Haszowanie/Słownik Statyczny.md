@@ -26,10 +26,10 @@ $$
 $$
 Dalej możemy wykonać przekształcenia z [[Nierówność Markowa|nierówności Markowa]]:
 $$
-\begin{align}
+\begin{align*}
 P(X \ge 1) &\le \frac{E(X)}{1} \\
 P(X \ge 1) &< \frac{1}{2} \implies P(X = 0) > \frac{1}{2}
-\end{align}
+\end{align*}
 $$
 
 **Lemat 2:**
@@ -48,17 +48,17 @@ Najpierw pokażemy, że *wartość oczekiwana* tej sumy jest mniejsza niż $2n$,
 
 Te równości pozwalają na wykonanie dalszych przekształceń:
 $$
-\begin{align}
+\begin{align*}
 E\left( \sum\limits_{j=0}^{n-1}\binom{n_{j}}{2} \right) &= E\left( \sum\limits_{j=0}^{n-1} \frac{n_{j}^{2} - n_{j}}{2} \right) \\
 E\left( \sum\limits_{j=0}^{n-1}n_{j}^{2} \right) &= 2E\left( \sum\limits_{j=0}^{n-1}\binom{n_{j}}{2} \right) + E\left( \sum\limits_{j=0}^{n-1}n_{j} \right) \le 2\frac{n-1}{2} + n < 2n
-\end{align}
+\end{align*}
 $$
 Stąd dalej wykonujemy przekształcenie z nierówności Markowa:
 $$
-\begin{align}
+\begin{align*}
 P(X \ge 4n) &\le \frac{E(X)}{4n} \\
 P(X \ge 4n) &< \frac{1}{2} \implies P(X <4n) \ge \frac{1}{2}
-\end{align}
+\end{align*}
 $$
 
 ### Podsumowanie
