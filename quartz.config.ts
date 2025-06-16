@@ -12,9 +12,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "pl-PL",
     baseUrl: "bartex00001.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],

@@ -17,13 +17,13 @@
 	- [x] [[Mnożenie (Dużych) Liczb]]
 	- [x] [[MinMax]]
 	- [x] [[Sieci Przełączników]]
-	- [ ] [[Closest Points]]
-- [ ] [[Programowanie Dynamiczne]]
-	- [ ] [[Liczenie Dwumianu Newtona]]
-	- [ ] [[Najtańsza Trasa w Tablicy]]
-	- [ ] [[Najdłuższy Wspólny Podciąg]]
-	- [ ] [[Wyznaczanie Kolejności Mnożenia Macierzy]]
-		- [ ] [[Optymalizacja Knutha]] – dodatkowe
+	- [x] [[Closest Points]]
+- [x] [[Programowanie Dynamiczne]]
+	- [x] [[Liczenie Dwumianu Newtona]]
+	- [ ] [[Najtańsza Trasa w Tablicy]] – triv
+	- [x] [[Najdłuższy Wspólny Podciąg]]
+	- [x] [[Wyznaczanie Kolejności Mnożenia Macierzy]]
+		- [x] [[Optymalizacja Knutha]] – dodatkowe
 	- [ ] [[Problem Plecakowy]]
 	- [ ] [[Najkrótsze Ścieżki Między Parami Wierzhołków]]
 	- [ ] [[Wyprowadzalność Wyrazu z Gramatyki]]
