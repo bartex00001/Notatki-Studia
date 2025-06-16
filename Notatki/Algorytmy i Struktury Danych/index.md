@@ -12,11 +12,11 @@
 		- [x] [[Algorytm Borůvki]]
 	- [x] [[Szeregowanie Zadań]]
 	- [x] [[Set Cover]]
-- [ ] [[Dziel i Zwyciężaj]]
-	- [ ] [[Merge Sort]]
-	- [ ] [[Mnożenie (Dużych) Liczb]]
-	- [ ] [[MinMax]]
-	- [ ] [[Sieci Przełączników]]
+- [x] [[Dziel i Zwyciężaj]]
+	- [x] [[Merge Sort]]
+	- [x] [[Mnożenie (Dużych) Liczb]]
+	- [x] [[MinMax]]
+	- [x] [[Sieci Przełączników]]
 	- [ ] [[Closest Points]]
 - [ ] [[Programowanie Dynamiczne]]
 	- [ ] [[Liczenie Dwumianu Newtona]]
@@ -27,7 +27,7 @@
 	- [ ] [[Problem Plecakowy]]
 	- [ ] [[Najkrótsze Ścieżki Między Parami Wierzhołków]]
 	- [ ] [[Wyprowadzalność Wyrazu z Gramatyki]]
-	- [ ] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe
+	- [ ] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe (K. pytał Lorysia)
 - [ ] Struktury Danych
 	- [x] [[Kopiec (binarny)]]
 		- [x] [[Kopiec MinMax]]
