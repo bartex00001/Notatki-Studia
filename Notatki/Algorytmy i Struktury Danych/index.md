@@ -24,10 +24,10 @@
 	- [x] [[Najdłuższy Wspólny Podciąg]]
 	- [x] [[Wyznaczanie Kolejności Mnożenia Macierzy]]
 		- [x] [[Optymalizacja Knutha]] – dodatkowe
-	- [ ] [[Problem Plecakowy]]
-	- [ ] [[Najkrótsze Ścieżki Między Parami Wierzhołków]]
-	- [ ] [[Wyprowadzalność Wyrazu z Gramatyki]]
-	- [ ] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe (K. pytał Lorysia)
+	- [x] [[Problem Plecakowy]]
+	- [x] [[Floyd-Warshall|Najkrótsze Ścieżki Między Parami Wierzhołków]]
+	- [x] [[Wyprowadzalność Wyrazu z Gramatyki]]
+	- [x] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe (K. pytał Lorysia)
 - [ ] Struktury Danych
 	- [x] [[Kopiec (binarny)]]
 		- [x] [[Kopiec MinMax]]
@@ -38,11 +38,11 @@
 	- [ ] [[Kopce Fibonacciego]]
 	- [ ] [[Drzewa Splay]]
 	- [x] [[Union Find]]
-- [ ] Sortowanie
-	- [ ] [[Quicksort]]
-	- [ ] [[Alternatywne Sortowanie]]
-	- [ ] [[Sortowanie Leksykograficzne]]
-		- [ ] [[Izomorfizm Drzew]]
+- [x] Sortowanie
+	- [x] [[Quicksort]]
+	- [x] [[Alternatywne Sortowanie]]
+	- [x] [[Sortowanie Leksykograficzne]]
+		- [x] [[Izomorfizm Drzew]]
 - [ ] Selekcja
 	- [ ] [[Selekcja|Szczególne Przypadki]]
 	- [ ] [[Algorytm Magicznych Piątek]]
@@ -50,7 +50,7 @@
 	- [ ] [[Lazy Select]]
 - [x] [[Haszowanie]]
 	- [x] [[Haszowanie Uniwersalne]]
-	- [x] [[Schematy Urnowe]]
+	- [x] [[Schematy Urnowe 1]]
 	- [x] [[Słownik Statyczny]]
 - [x] [[Wyszukiwanie Wzorca]]
 	- [x] [[Karp Rabin]]
