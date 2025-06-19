@@ -3,6 +3,8 @@
 - $\sum\limits_{i}x_{i}p_{i}$ dla dyskretnej zmiennej
 - $\int_{\mathbb{R}}xf(x)dx$ dla ciągłej zmiennej
 
+> Intuicyjnie jest to *spodziewana* wartość zmiennej $X$.
+
 ## Własności
 
 ### Liniowa Transformacja Zmiennej

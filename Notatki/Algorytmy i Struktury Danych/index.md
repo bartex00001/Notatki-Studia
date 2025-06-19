@@ -43,11 +43,12 @@
 	- [x] [[Alternatywne Sortowanie]]
 	- [x] [[Sortowanie Leksykograficzne]]
 		- [x] [[Izomorfizm Drzew]]
-- [ ] Selekcja
-	- [ ] [[Selekcja|Szczególne Przypadki]]
-	- [ ] [[Algorytm Magicznych Piątek]]
-	- [ ] [[Algorytm Hoare'a]]
-	- [ ] [[Lazy Select]]
+- [x] Selekcja
+	- [x] [[Selekcja|Szczególne Przypadki]]
+	- [x] [[Algorytm Magicznych Piątek]]
+	- [x] [[Przypadek Ogólny]]
+		- [x] [[Przypadek Ogólny#Algorytm Hoare'a|Algorytm Hoare'a]]
+	- [x] [[Lazy Select]]
 - [x] [[Haszowanie]]
 	- [x] [[Haszowanie Uniwersalne]]
 	- [x] [[Schematy Urnowe 1]]
@@ -56,6 +57,6 @@
 	- [x] [[Karp Rabin]]
 	- [x] [[Wyszukiwanie Automatem Skończonym]]
 	- [x] [[KMP]]
-- [ ] [[Fast Fourier Transform]]
+- [x] [[Fast Fourier Transform]]
 
 > Lista tematów w ograniczonym porządku temporalnym
