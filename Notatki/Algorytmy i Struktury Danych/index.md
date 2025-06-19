@@ -1,10 +1,10 @@
 # (WIP) Lista zagadnień do powtórzenia przed egzaminem:
 
 - [x] [[Złożoność Algorytmów i Problemów]]
-- [ ] Dolne Granice
-	- [ ] [[Model Obliczeń]]
-	- [ ] [[Liniowe Drzewa Decyzyjne]]
-	- [ ] [[Gra z Adwersarzem]]
+- [x] [[Dolne Granice]]
+	- [x] [[Drzewa Decyzyjne]]
+	- [x] [[Liniowe Drzewa Decyzyjne]]
+	- [x] [[Gra z Adwersarzem]]
 - [x] [[Wstęp – Algorytmy Zachłanne|Algorytmy Zachłanne]]
 	- [x] Minimalne Drzewo Spinające
 		- [x] [[Algorytm Kruskala]]
@@ -37,6 +37,7 @@
 	- [ ] [[Kopce Dwumianowe]]
 	- [ ] [[Kopce Fibonacciego]]
 	- [ ] [[Drzewa Splay]]
+	- [ ] [[Drzewce]]
 	- [x] [[Union Find]]
 - [x] Sortowanie
 	- [x] [[Quicksort]]
@@ -57,6 +58,7 @@
 	- [x] [[Karp Rabin]]
 	- [x] [[Wyszukiwanie Automatem Skończonym]]
 	- [x] [[KMP]]
+	- [ ] [[Algorytm Boyera-Moore'a]] – nie było na wykładzie
 - [x] [[Fast Fourier Transform]]
 
 > Lista tematów w ograniczonym porządku temporalnym

@@ -4,9 +4,20 @@ Zacznijmy od motywacji za tym wszystkim...
 | --------------------------- | --------------------- | -------------------- |
 | Tablica Współczynników      | $O(n)$                | $O(n^{2})$           |
 | Tablica Wartości w Punktach | $O(n^{2})$            | $O(n)$               |
+
 By wykonywać operacje *szybko* będziemy chcieli więc przenosić się pomiędzy reprezentacjami *o ile się da dosyć szybko* – docelowo w czasie $O(n\log n)$.
 
-### Pierwiastki z Jedności
+### Naiwne Zamiany Reprezentacji
+
+#### Współczynniki -> Wartości w Punktach
+
+Wystarczy obliczyć (np. schematem Hornera) wartości wielomianu o stopniu $n-1$ w $n$ punktach. To jest do zrobienia w czasie $O(n^{2})$.
+
+#### Wartości w Punktach -> Współczynniki
+
+Korzystamy z [[Interpolacja Wielomianowa|interpolacji]], która pozwala jednoznacznie odtworzyć wielomian przechodzący przez dane punkty w czasie $O(n^{2})$.
+
+## Pierwiastki z Jedności
 
 Okaże się, że bardzo przydadzą się pierwiastki z jedności (liczb zespolonych).
 Zbiór pierwiastków $n$-tego stopnia z jedności to:
@@ -17,6 +28,7 @@ lub izomorficznie:
 $$
 \left\{ w_{n}^{k} = \cos\left( \frac{2k\pi}{n} \right) + i\sin\left( \frac{2k\pi}{n} \right) : k\in\{0,\dots,n-1\} \right\}
 $$
+> Zbiory te tworzą *grupę* izomorficzną z $(\mathbb{Z}_{n}, +)$.
 
 **Fakt:**
 Zbiór $\{(w_{n}^{i})^{2} : i \in \{0,\dots,n-1\}\}$ jest równy $\left\{ w_{\frac{n}{2}}^{i} : i \in \left\{ 0,\dots, \frac{n}{2}-1 \right\} \right\}$, czyli zbiorowi o połowę mniejszemu.
