@@ -31,8 +31,8 @@
 - [ ] Struktury Danych
 	- [x] [[Kopiec (binarny)]]
 		- [x] [[Kopiec MinMax]]
-	- [ ] [[Drzewa AVL]]
-	- [ ] [[B-Drzewa]]
+	- [x] [[Drzewa AVL]]
+	- [x] [[B-Drzewa]]
 	- [ ] [[Drzewa Czerwono-Czarne]]
 	- [ ] [[Kopce Dwumianowe]]
 	- [ ] [[Kopce Fibonacciego]]
