@@ -28,16 +28,16 @@
 	- [x] [[Floyd-Warshall|Najkrótsze Ścieżki Między Parami Wierzhołków]]
 	- [x] [[Wyprowadzalność Wyrazu z Gramatyki]]
 	- [x] [[Drzewa Rozpinające Drabin]] – nie było na wykładzie ale obowiązkowe (K. pytał Lorysia)
-- [ ] Struktury Danych
+- [x] Struktury Danych
 	- [x] [[Kopiec (binarny)]]
 		- [x] [[Kopiec MinMax]]
 	- [x] [[Drzewa AVL]]
 	- [x] [[B-Drzewa]]
-	- [ ] [[Drzewa Czerwono-Czarne]]
-	- [ ] [[Kopce Dwumianowe]]
-	- [ ] [[Kopce Fibonacciego]]
-	- [ ] [[Drzewa Splay]]
-	- [ ] [[Drzewce]]
+	- [x] [[Drzewa Czerwono-Czarne]]
+	- [x] [[Kopce Dwumianowe]]
+	- [x] [[Kopce Fibonacciego]]
+	- [x] [[Drzewa Splay]]
+	- [x] [[Drzewce]]
 	- [x] [[Union Find]]
 - [x] Sortowanie
 	- [x] [[Quicksort]]

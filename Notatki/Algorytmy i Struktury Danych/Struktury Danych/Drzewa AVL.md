@@ -34,7 +34,7 @@ Początkową część wykonujemy tak jak w standardowych algorytmach dla [[Binar
 
 Wracając musimy w każdym odwiedzonym wierzchołku sprawdzić, czy nie zepsuliśmy balansu. Jeżeli zepsuliśmy, to trzeba naprawić! Jeżeli bez straty ogólności założymy, że zepsuliśmy lewe poddrzewo, to mamy dwa istotnie różne przypadki do rozpatrzenia.
 
-#TODO Wstawić obrazek.
+![[AVL-tree-insert.png|400]]
 
 Zauważamy, że w obu przypadkach wysokość drzewa (mierzona od korzenia, którym być może jest inny wierzchołek!) nie została zmieniona.
 Wnioskujemy z tego, że wystarczą co najwyżej dwie rotacje krótkie lub bardziej abstrakcyjnie *jedno naprawienie balansu*.
@@ -51,6 +51,3 @@ Jest tak dlatego, że rotacje mogą nie zachować wysokości, przez co problem k
 ### Złożoność Czasowa
 
 Wstawianie i usuwanie wymaga przeprowadzenia wyszukiwania na drzewie [[Binary Search Tree|BST]] o wysokości $O(\log n)$ i wykonania stałej liczby operacji dla każdego wierzchołka na drodze (nawet jeśli tą operacją jest rotacja).
-
-## Zastosowania
-
