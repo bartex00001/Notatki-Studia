@@ -14,13 +14,15 @@ Oznaczmy zbiór wszystkich najdłuższych podciągów jako $LCS(A,B)$.
 - Jeżeli $a_{n}\ne b_{m}$, to istnieje ciąg w $LCS$ który nie kończy się na $a_{n}$ lub na $b_{m}$.
 
 Prowadzi nas to do następującego wzoru:
-$$\begin{align*}
+$$
+\begin{align*}
 dp_{i,j} &= \begin{cases}
 0 : i=0\lor j=0\\
 d_{i-1,j-1} + 1: a_{i} = b_{j}\\
 \max(d_{i,j-1}, d_{i-1,j}) : a_{i} \ne b_{j}
 \end{cases}
-\end{align*}$$
+\end{align*}
+$$
 
 ### Złożoność
 
@@ -34,8 +36,9 @@ Wyliczenie każdego pola tablicy $dp$ zajmuje stały koszt, ale tych elementów 
 
 ### Przykład
 
-$$\begin{align*}
-\begin{array}{c|c c}
+$$
+\begin{align*}
+\begin{array}{c|c c c c c c}
 d_{i,j} & \epsilon & B & A & R & A & N\\
 \hline
 \epsilon & 0 & 0 & 0 & 0 & 0 & 0\\
@@ -45,7 +48,8 @@ B & 0 & 1 & 1 & 1 & 2 & 2\\
 A & 0 & 1 & 2 & 2 & 2 & 2\\
 N & 0 & 1 & 2 & 2 & 2 & 3
 \end{array}
-\end{align*}$$
+\end{align*}
+$$
 
 ### Odtwarzanie Podciągu
 
