@@ -23,19 +23,23 @@ Metoda Karatsuby zakłada podzielenie liczb na połowy:
 - $b = b_{0} + b_{1}\cdot 2^{s}$
 
 By następnie policzyć wyrażenie:
-$$\begin{align*}
+$$
+\begin{align*}
 ab &= 2^{2s} c_{2} + 2^{s}c_{1} + c_{0}\\
 c_{0} &= a_{0}b_{0}\\
 c_{1} &= a_{1}b_{0} + a_{0}b_{1}\\
 c_{2} &= a_{1}b_{1}
-\end{align*}$$
+\end{align*}
+$$
 Teraz by algorytm działał szybciej niż naiwny algorytm kwadratowy chcemy wykonać mniej niż $4$ mnożenia, by uzyskać wartości $c_{0},c_{1},c_{2}$.
 Policzymy więc na początku $c_{0}$ i $c_{2}$ na co potrzebujemy dwóch mnożeń.
 Później policzymy $c_{1} = (a_{1} + a_{0})(b_{1} + b_{0}) - c_{0} - c_{2}$.
 Wszystkie trzy mnożenia dotyczą liczb mniej-więcej $\frac{n}{2}$ bitowych (uznajemy, że dodawanie i odejmowanie jest tanie). Otrzymujemy więc koszt będący rekurencją:
-$$\begin{align*}
+$$
+\begin{align*}
 T(n) &= 3T\left(\frac{n}{2}\right) + \Theta(n) = \Theta(n^{\log_{2}3})
-\end{align*}$$
+\end{align*}
+$$
 
 ### Ogólna Wersja Algorytmu
 
@@ -47,7 +51,9 @@ Podzielmy obie liczby $a,b$ na $k$ kawałków $\frac{n}{k}$ bitowych:
 - $b = \sum\limits_{i=0}^{k-1}2^{\frac{in}{k}}b_{i}$
 
 Teraz potrzebujemy policzyć wartość $\sum\limits_{i=0}^{2k-2}2^{\frac{in}{k}}c_{i}$, gdzie kolejne  $c_{i}$ dla $i\in\{0,\dots,2k-2\}$:
-$$c_{i} = \sum\limits_{r=0}^{i}a_{r}\cdot b_{i-r}$$
+$$
+c_{i} = \sum\limits_{r=0}^{i}a_{r}\cdot b_{i-r}
+$$
 Dalej *wyczarowujemy* sobie ciąg liczb $w_{1},\dots,w_{2k-1}$:
 $$
 w_{t} = \left( \sum\limits_{i=0}^{k-1}a_{i}t^{i} \right) \cdot \left( \sum\limits_{i=0}^{k-1} b_{i}t^{i} \right)
@@ -61,3 +67,6 @@ Gdzie macierz $U = \{u_{ij}\}, u_{ij} = i^{j}$  jest odwracalna, więc układ je
 Teraz zauważamy, że ciąg $w_{i}$ składa się z mniejszych elementów, które możemy policzyć rekurencyjnie.
 
 Algorytm ten będzie działał w czasie $\Theta(n^{\log_{k}(2k-1)})$, bo wykonujemy $(2k-1)$ rekurencyjnych wywołań dla danych rozmiaru $\frac{n}{k}$ (to jest oczywiście nieformalne).
+
+> Intuicja za złożonością:
+> Każdą podzieloną liczbę traktujemy jako wielomian stopnia $k-1$ poprzez następującą interpretację $A(x) = a_{0} + a_{1}x + \dots + a_{k-1}x^{k-1}, a = A(2^{p})$. Wynikiem mnożenia $a\cdot b$ jest wielomian stopnia $2(k-1)$. By wyznaczyć współczynniki tego wielomianu (interpolacja) potrzebujemy $2k - 1$ pomiarów.

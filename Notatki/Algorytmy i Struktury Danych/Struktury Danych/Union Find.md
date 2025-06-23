@@ -105,7 +105,7 @@ Słownie $\log^{*} n$ wyznacza najmniejsze takie $k$, że funkcja Ackermana $A(k
 
 ---
 
-Teraz podzielmy wszystkie wierzchołki na kubełki takie, że $B_{i} = \{v \mid \text{rząd}(v) = \log^{*} i\}$.
+Teraz podzielmy wszystkie wierzchołki na kubełki takie, że $B_{i} = \{v \mid \log^{*}(\text{rząd}(v)) = i\}$.
 
 1. Wystarczy nam $\log^{*}n$ kubełków, bo nie może istnieć wierzchołek o randze większej niż $n$.
 2. W kubełku $B_{i}$ jest co najwyżej $\frac{2n}{2^{A(i)}}$ elementów. Z *lematu 4* możemy rozpisać sumę na maksymalną liczbę elementów każdej z rang: $\frac{n}{2^{A(i)}} + \frac{n}{2^{A(i) + 1}} + \dots + \frac{n}{2^{2^{A(i)} - 1}} \le \frac{2n}{2^{A(i)}}$.

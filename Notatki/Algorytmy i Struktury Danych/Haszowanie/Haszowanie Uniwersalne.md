@@ -9,7 +9,8 @@ $$
 $$
 Czyli intuicyjnie dla dowolnych dwóch elementów $x,y$ z Uniwersum, liczba funkcji haszujących $h\in H$ dla których występuje kolizja ma być *możliwie mała*.
 
-To pozwoli nam udowodnić następujące twierdzenie:
+**Wniosek z Definicji:**
+Prawdopodobieństwo, że przy *losowo* wybranej funkcji haszującej z $H$ elementy $x,y$ kolidują wynosi $\frac{1}{m}$.
 
 **Twierdzenie 3:**
 Niech $H$ będzie uniwersalną rodziną funkcji haszujących. Dla dowolnego zbioru $n \le m$ kluczy, liczba kolizji w jakich bierze udział ustalony (dowolny) klucz $x$ jest w średnim przypadku mniejsza od $1$.
@@ -33,7 +34,7 @@ gdzie sekwencje $\langle a_{0}, a_{1},\dots,a_{r}\rangle, \langle x_{0},x_{1},\d
 **Twierdzenie 4:**
 Rodzina funkcji w stylu $R_{1}$ jest uniwersalną rodziną haszującą.
 **d-d:**
-#TOOD
+#TODO 
 
 ### R2
 

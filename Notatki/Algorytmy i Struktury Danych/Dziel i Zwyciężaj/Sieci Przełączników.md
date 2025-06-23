@@ -13,7 +13,8 @@ Skonstruować sieć przełączników umożliwiającą otrzymanie dowolnej permut
 
 ### Głębokość Sieci
 
-Jeżeli chcemy mieć możliwość otrzymania dowolnej permutacji, to konieczna jest możliwość przesunięcia pewnego elementu na dowolne inne miejsce. Wtedy siecią o minimalnej głębokości zapewniającą taką możliwość będzie drzewo binarne o głębokości $\log n$.
+Jeżeli chcemy mieć możliwość otrzymania dowolnej permutacji, to konieczna jest możliwość przesunięcia pewnego (np. pierwszego) elementu na dowolne inne miejsce. 
+Wtedy siecią o minimalnej głębokości zapewniającą taką możliwość będzie drzewo binarne o $n$ liściach, każdy podpięty do innego wyjścia. Minimalna głębokość takiego drzewa to $\log n$.
 Stąd ograniczenie na głębokość to: $\Omega(\log n)$.
 
 ### Liczba Przełączników

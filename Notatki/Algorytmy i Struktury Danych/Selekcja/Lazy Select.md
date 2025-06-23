@@ -6,21 +6,28 @@ Ciąg elementów $T[1\dots n]$ z porządkiem liniowym.
 **Zadanie:**
 Znaleźć $k$-tą liczbę w kolejności według danego porządku.
 
-Będziemy chcieli z ciągu elementów $T$ wybrać losową próbkę $R$ na tyle małą, by potrafić ją posortować dosyć szybko.
-Na podstawie tych elementów chcemy wybrać wartości $L,H$ takie, że z dużym prawdopodobieństwem szukany $k$-ty element ma wartość pomiędzy $L,H$. Dalej sortujemy wszystkie elementy o wartościach pomiędzy $L,H$, by następnie *po prostu* wybrać $k$-ty element.
+Będziemy chcieli z ciągu elementów $T$ wybrać losowo dosyć małą próbkę $R$, ale na tyle dużą, by była spora szansa na to, że zawiera ona odpowiednio wiele informacji, by później odnaleźć medianę.
+Z próbki $R$ wyznaczamy *znaczniki* $L,H$ dla których istnieje spora szansa na to, że:
 
-Algorytm realizują następujące kroki:
+- mediana zawarta jest pomiędzy $L,H$
+- liczba elementów $T$ zawartych w przedziale $[L,H]$ jest *mała*
+
+Jeżeli faktycznie tak jest, to elementy z tego przedziału sortujemy i od razu wyznaczamy medianę.
+
+##### Algorytm
+
+Poniżej znajduje się algorytm realizujący ta metodę z już dobranymi odpowiednio stałymi:
 
 1. Wybierz losowo, *z powtórzeniami* próbkę $R$ złożoną z $n^{3/4}$ elementów.
-2. Posortuj $R$ w czasie $O(n^{3/4}\log n)$
-3. $x \leftarrow kn^{-1/4}$; $L \leftarrow R[l]$; $H \leftarrow R[h]$;
-4. Policz $r_{s}(L) = \text{ile elementów jest mniejszych niż L}$
-   Policz $P = \{y \in S \mid L \le y \le H\}$
-5. Sprawdź, czy 
-	1. $k$-ty element znajduje się w $P$ – czy $r_{s}(L) < k \le |P| + r_{s}(L)$
-	2. Czy zbiór $P$ jest odpowiednio mały: $|P| \le 4n^{3/4} + 2$
-	3. Jeśli `5.1` lub `5.2` nie zachodzi, to wróć do `1`
-6. Posortuj $P$, a następnie wybierz oczekiwany element.
+2. Posortuj $R$
+3. $x = kn^{-1/4}, l = \max\{\lfloor x - \sqrt{ n } \rfloor, 1\}, h = \min\{\lfloor x - \sqrt{ n } \rfloor, n^{3/4}\}$
+	1. $L = R[l]$
+	2. $H = R[h]$
+4. Wyznacz liczbę elementów ($C_{l}$) mniejszych niż $L$ oraz zbiór elementów $P$ zawartych w przedziale $[L,H]$, dalej sprawdź czy:
+	1. $k$-ty element znajduje się w $P$ – czy $C_{l} < k \le |P| + C_{l}$
+	2. zbiór $P$ jest odpowiednio mały: $|P| \le 4n^{3/4} + 2$
+		- Jeśli `4.1` lub `4.2` nie zachodzi, to wróć do `1`
+5. Posortuj $P$, a następnie wybierz oczekiwany element.
 
 ### Złożoność Obliczeniowa
 
@@ -31,6 +38,8 @@ Z prawdopodobieństwem $1 - O\left( n^{-1/4} \right)$ algorytm potrzebuje tylko 
 1. Pokazujemy, że $kn^{-1/4}$ jest wartością oczekiwaną liczby elementów mniejszych niż $k$-ty w $R$
 2. Pokazujemy, że wariancja tej zmiennej losowej jest mniejsza niż $\sqrt{ n }$
 3. Korzystamy z [[Nierówność Czebyszewa|nierówności Czebyszewa]]
+
+> Jeżeli uwierzymy, że zachodzi $1,2$, to intuicyjnie wybieramy *przedział ufności*, do którego *często* trafią wyniki pomiarów próbek oraz te które tam trafią będziemy potrafili łatwo procesować.
 
 #TODO  Uzupełnić dowód na podstawie *R.Motwani, P.Raghavan, Randomized Algorithms*.
 
