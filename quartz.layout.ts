@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/bartex00001/Notatki-Studia",
-      "Bartłomiej Stefański": "https://github.com/bartex00001",
+      GitHub: "https://github.com/bartlomiej-stefanski/Notatki-Studia",
+      "Bartłomiej Stefański": "https://github.com/bartlomiej-stefanski",
     },
   }),
 }

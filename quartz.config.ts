@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "pl-PL",
-    baseUrl: "bartex00001.github.io",
+    baseUrl: "bartlomiej-stefanski.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
